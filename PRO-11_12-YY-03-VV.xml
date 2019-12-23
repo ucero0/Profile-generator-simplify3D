@@ -1,0 +1,241 @@
+<?xml version="1.0"?>
+<profile  name="PRO-11_12-YY-03-VV" version="2019-11-08 11:32:00" app="S3D-Software 4.1.2">  <baseProfile>Default</baseProfile>
+  <printMaterial></printMaterial>
+  <printQuality></printQuality>
+  <printExtruders></printExtruders> 
+  <!--- EXTRUDERS parameters -->
+  <extruder name="T0Laton"><!--- Nombre del nozzle utilizado -->
+    <toolheadNumber>0</toolheadNumber><!--- 0 extrusor izquierdo 1 extrusor derecho -->
+    <diameter>0.4</diameter> <!--- diametro nozzle -->
+    <autoWidth>1</autoWidth> <!--- Ancho de linea 0 automatico 1 manual -->
+    <width>0.4</width> <!--- Ancho de linea manual mm -->
+    <extrusionMultiplier>0.9</extrusionMultiplier> <!--- Flow multiplicador -->
+    <useRetract>1</useRetract> <!--- Sin retract 0 con retract 1 -->
+    <retractionDistance>2.5</retractionDistance> <!--- mm distancia retract -->
+    <extraRestartDistance>0</extraRestartDistance><!--- Extrusion extra en mm al despues de una retraccion valores negativos estan permitidos -->
+    <retractionZLift>0</retractionZLift><!--- mm distancia en eje z al hacer retract -->
+    <retractionSpeed>1800</retractionSpeed><!--- velocidad de retraccion mm/min -->
+    <useCoasting>0</useCoasting><!--- 0 desactivar 1 activar,  -->
+    <coastingDistance>0.2</coastingDistance><!--- distancia mm a la que el extrusor deja de extruir antes del fin de un loop  -->
+    <useWipe>0</useWipe><!--- 0 desactivar 1 activar,  -->
+    <wipeDistance>5</wipeDistance><!--- Distancia a la que limpia el nozzle al terminar un loop  -->
+  </extruder>  
+<!--- LAYER -->
+  <primaryExtruder>0</primaryExtruder><!--- 0 extrusor izquierdo 1 extrusor derecho -->
+  <layerHeight>0.2</layerHeight><!--- Altura de capa -->
+  <topSolidLayers>3</topSolidLayers><!--- N capas superiores -->
+  <bottomSolidLayers>3</bottomSolidLayers><!--- N capas inferiores -->
+  <perimeterOutlines>2</perimeterOutlines><!--- N Lineas de perimetro -->
+  <printPerimetersInsideOut>1</printPerimetersInsideOut><!---0 no 1 si -->
+  <startPointOption>2</startPointOption><!--- 1 Usa puntos de comienzo aleatorios, 2 optimizar el punto de partida para impresion mas rapida, 3 elige el punto de comienzo mas cercano a una localizacion especificada -->
+  <startPointOriginX>0</startPointOriginX>
+  <startPointOriginY>0</startPointOriginY>
+  <sequentialIslands>0</sequentialIslands><!--- 0 Desactivado, 1 activado -->
+  <spiralVaseMode>0</spiralVaseMode><!--- 0 Desactivado, 1 activado -->
+  <firstLayerHeightPercentage>90</firstLayerHeightPercentage><!--- altura de la primera capa en porcentaje -->
+  <firstLayerWidthPercentage>100</firstLayerWidthPercentage><!--- altura de la primera capa en porcentaje -->
+  <firstLayerUnderspeed>0.5</firstLayerUnderspeed><!--- velocidad de la primera capa en porcentaje -->
+  
+<!--- ADDITIONS-->
+  <!--- RAFT -->
+  <useRaft>0</useRaft><!--- 0 Desactivado, 1 activado -->
+  <raftExtruder>0</raftExtruder><!--- 0 extrusor izquierdo 1 extrusor derecho -->
+  <raftTopLayers>3</raftTopLayers><!--- N capas raft superiores -->
+  <raftBaseLayers>2</raftBaseLayers><!--- N capas raft inferiores -->
+  <raftOffset>3</raftOffset><!--- offset desde el raft a la pieza -->
+  <raftSeparationDistance>0.14</raftSeparationDistance><!--- Separacion entre la ultima capa del raft y la primera de la capa  -->
+  <raftTopInfill>100</raftTopInfill><!--- % infill de la ultima capa -->
+  <aboveRaftSpeedMultiplier>0.3</aboveRaftSpeedMultiplier> <!--- Modifica la velocidad de la primera capa encima de el raft -->
+
+  <!--- SKIRT -->
+  <useSkirt>1</useSkirt><!--- 0 Desactivado, 1 activado -->
+  <skirtExtruder>999</skirtExtruder><!--- 0 extrusor izquierdo 1 extrusor derecho, 999 todos los extrusores -->
+  <skirtLayers>1</skirtLayers><!--- Numero de capas en  de skirt -->
+  <skirtOutlines>2</skirtOutlines><!--- Numero de lineas de perimetro de skirt -->
+  <skirtOffset>4</skirtOffset><!--- Offset entre perimetro de skirt y pieza -->
+
+  <!--- PRIME TOWER -->
+  <usePrimePillar>0</usePrimePillar><!--- 0 Desactivado, 1 activado -->
+  <primePillarExtruder>999</primePillarExtruder><!--- 0 extrusor izquierdo 1 extrusor derecho, 999 todos los extrusores -->
+  <primePillarWidth>12</primePillarWidth><!--- Ancho mm del pilar para purgar material con cambio de herramienta -->
+  <primePillarLocation>7</primePillarLocation><!--- Posicion del pilar del 1..8-->
+  <primePillarSpeedMultiplier>1</primePillarSpeedMultiplier><!--- multiplicador de velocidad para pilar -->
+
+  <!--- OOZE SHIELD -->
+  <useOozeShield>0</useOozeShield><!--- 0 Desactivado, 1 activado -->
+  <oozeShieldExtruder>999</oozeShieldExtruder>
+  <oozeShieldOffset>2</oozeShieldOffset><!--- Offset entre perimetro shield y pieza -->
+  <oozeShieldOutlines>1</oozeShieldOutlines><!--- N lineas shield -->
+  <oozeShieldSidewallShape>1</oozeShieldSidewallShape><!--- Tipo de shield, 1"vertical", 2"Waterfall", 3"Countoured" -->
+  <oozeShieldSidewallAngle>30</oozeShieldSidewallAngle><!--- Ángulo de cambio del shield-->
+  <oozeShieldSpeedMultiplier>1</oozeShieldSpeedMultiplier><!--- Porcentaje de velocidad -->
+
+  <!--- INFILL -->
+  <infillExtruder>0</infillExtruder><!--- 0 extrusor izquierdo 1 extrusor derecho -->
+  <internalInfillPattern>Rectilinear</internalInfillPattern><!--- "Rectilinear", "Grid", "Triangular", "Wiggle", "Fast honeycomb", "Full honeycomb" -->
+  <externalInfillPattern>Rectilinear</externalInfillPattern><!--- "Rectilinear" -->
+  <infillPercentage>15</infillPercentage><!--- Porcentaje de Infill  de 0 a 100 -->
+  <outlineOverlapPercentage>15</outlineOverlapPercentage><!--- Super posición del relleno con el perímetro, de 0 a 100% -->
+  <infillExtrusionWidthPercentage>100</infillExtrusionWidthPercentage><!--- Grosor de las lineas de relleno con respecto a las del perímetro -->
+  <minInfillLength>5</minInfillLength><!--- dimension minima que debe tener un segmento de relleno, por debajo de esta dimensión no se realiza linea de relleno-->
+  <infillLayerInterval>1</infillLayerInterval><!--- Número de capas que se combinan en el relleno, si pone 1 es como si estuviera desactivado-->
+  <internalInfillAngles>45,-45</internalInfillAngles><!--- Ángulos de relleno interno, se alternan capa a capa -->
+  <overlapInternalInfillAngles>0</overlapInternalInfillAngles><!--- Activar esta opción provoca que el relleno de una capa contenga todos los ángulos definidos anteriormente -->
+  <externalInfillAngles>45,-45</externalInfillAngles><!--- Son los ángulos de relleno de las capas superiores e inferiores -->
+
+  <!--- SUPPORT-->
+  <generateSupport>0</generateSupport><!--- Activar o desactivar la creación de soportes -->
+  <supportExtruder>0</supportExtruder><!--- Elegir el extrusor para crear los soportes -->
+  <supportInfillPercentage>25</supportInfillPercentage><!--- Porcentaje de relleno de los soportes -->
+  <supportExtraInflation>0</supportExtraInflation><!--- Distancia extra que se extenderá el sorporte en torno a nuestra pieza -->
+  <supportBaseLayers>0</supportBaseLayers><!--- Capas solidas base que tienen nuestros sorportes -->
+  <denseSupportExtruder>0</denseSupportExtruder><!--- Extrusor que formará las ultimas capas de nuestros sorportes -->
+  <denseSupportLayers>0</denseSupportLayers><!--- Número de capas superiores de nuestros soportes -->
+  <denseSupportInfillPercentage>70</denseSupportInfillPercentage><!--- Porcentaje de relleno de estas capas superiores -->
+  <supportLayerInterval>1</supportLayerInterval><!--- Número de capas que se combinan los soportes, si pone 1 es como si estuviera desactivado-->
+  <supportHorizontalPartOffset>0.3</supportHorizontalPartOffset><!--- Distancia entre el sorpote y la pieza -->
+  <supportUpperSeparationLayers>1</supportUpperSeparationLayers><!--- Número de capas vacias superiores entre el soporte y la pieza -->
+  <supportLowerSeparationLayers>1</supportLowerSeparationLayers><!--- "Número de capas vacias inferiores entre el soporte y la pieza-->
+  <supportType>0</supportType><!--- "Normal", "From build plataform only" este segundo crea solo los soportes que empiecen en la plataforma -->
+  <supportGridSpacing>4</supportGridSpacing> <!--- ancho de los pilares de soporte -->
+  <maxOverhangAngle>45</maxOverhangAngle><!--- Ángulo máximo soportado, es decir, soportara desde 0º hasta los establecidos -->
+  <supportAngles>0</supportAngles><!--- Ángulos de los soportes -->
+
+<!--- TEMPERATURE-->
+  <!--- Cama caliente --><!--- Si no se va a utilizar poner temperaturas a 0 -->
+  <temperatureController name="Heated Bed">
+    <temperatureNumber>0</temperatureNumber> <!--- 0 extr izquierdo, 1 extrusor derecho, 2 heated bed -->
+    <isHeatedBed>1</isHeatedBed><!--- 0 No 1 Si -->
+    <stabilizeAtStartup>1</stabilizeAtStartup><!--- estabilizar temperatura antes de empezar -->
+    <setpoint layer="1" temperature="60"/> <!--- Para añadir otra temp a un layer determinado copiar esta linea y pegar a continuacion modificando los valores -->
+
+  <!--- Extrusor izquierdo --><!--- Si no se va a utilizar poner temperaturas a 0 -->
+  </temperatureController>
+  <temperatureController name="T0Laton">
+    <temperatureNumber>0</temperatureNumber>
+    <isHeatedBed>0</isHeatedBed>
+    <stabilizeAtStartup>1</stabilizeAtStartup>
+    <setpoint layer="1" temperature="200"/>
+    <setpoint layer="2" temperature="210"/><!--- Para añadir otra temp a un layer determinado copiar esta linea y pegar a continuacion modificando los valores -->
+  </temperatureController>
+
+ 
+  <!--- COOLING-->
+  <fanSpeed>
+   <setpoint layer="1" speed="0"/><!--- Para añadir otra velocidad de a un layer determinado copiar esta linea y pegar a continuacion modificando los valores -->
+   <setpoint layer="2" speed="15"/>
+   <setpoint layer="3" speed="25"/>
+   <setpoint layer="4" speed="50"/>
+   <setpoint layer="5" speed="100"/>
+  </fanSpeed>
+
+   <blipFanToFullPower>0</blipFanToFullPower><!--- Esta opción activa un sonido que se emite con la velocidad del ventilador se incrementa a máxima potencia desde 0 -->
+  <adjustSpeedForCooling>1</adjustSpeedForCooling>
+  <minSpeedLayerTime>15</minSpeedLayerTime>
+  <minCoolingSpeedSlowdown>20</minCoolingSpeedSlowdown>
+  <increaseFanForCooling>0</increaseFanForCooling><!--- Activar esta opción permite incrementar la velocidad del ventilador para capas que tengan X grados -->
+  <minFanLayerTime>45</minFanLayerTime><!--- Incrementa la velocidad del ventilador en capas que este por debajo de __grados -->
+  <maxCoolingFanSpeed>100</maxCoolingFanSpeed><!--- Porcentaje de máxima velocidad de enfriamento del ventilador -->
+  <increaseFanForBridging>0</increaseFanForBridging><!--- Activar esta opción permite establecer una velocidad del ventilador diferente para las zonas con puentes -->
+  <bridgingFanSpeed>100</bridgingFanSpeed><!--- Establecer un porcentaje de velocidad para todos los puentes de la pieza -->
+
+  <!--- G-CODE-->
+  <use5D>1</use5D><!--- Esta dimension incluye la dimension E que permite modificar la tasa de flujo  -->
+  <relativeEdistances>0</relativeEdistances><!--- Esta opción hace que las dimensiones relativas se generen por cada vuelta en vez de utilizar los valores absolutos -->
+  <allowEaxisZeroing>1</allowEaxisZeroing><!--- Esta opción permite la calibración de cero de las distancias de extrusión -->
+  <independentExtruderAxes>0</independentExtruderAxes><!--- Esta opción se activa cuando dos extrusores tienen ejes independientes -->
+  <includeM10123>0</includeM10123><!--- Permite incluir M101/M102/M103 -->
+  <stickySupport>1</stickySupport><!--- Permite que los comandos mantengan su valor aun cuando no se definen en cada linea -->
+  <applyToolheadOffsets>1</applyToolheadOffsets><!--- Esta opción hara que todas las coordenadas GCODE cuenten con offset de cabezal-->
+  <gcodeXoffset>0</gcodeXoffset><!--- Offset X aplicado a todas las coordenadsas del GCODE final -->
+  <gcodeYoffset>0</gcodeYoffset><!--- Offset Y aplicado a todas las coordenadsas del GCODE final -->
+  <gcodeZoffset>0</gcodeZoffset><!--- Offset Z aplicado a todas las coordenadsas del GCODE final -->
+  <overrideMachineDefinition>1</overrideMachineDefinition><!--- Esta opción permite definir y editar las características de la máquina -->
+  <machineTypeOverride>0</machineTypeOverride><!--- Tipo de máquina, "Cartesian robot (rectangular volume)", "Delta robot (Cylindrical build volume)" -->
+  <strokeXoverride>220</strokeXoverride><!--- Dimensión de construcción eje X -->
+  <strokeYoverride>220</strokeYoverride><!--- Dimensión de construcción eje Y -->
+  <strokeZoverride>240</strokeZoverride><!--- Dimensión de construcción eje Z -->
+  <originOffsetXoverride>0</originOffsetXoverride><!--- Posición X del origen de coordenadas -->
+  <originOffsetYoverride>0</originOffsetYoverride><!--- Posición Y del origen de coordenadas -->
+  <originOffsetZoverride>0</originOffsetZoverride><!--- Posición Z del origen de coordenadas -->
+  <homeXdirOverride>-1</homeXdirOverride><!--- Define si la posición X del origen definida anteriormente es el: "mínimo", el "centro" o el "max" -->
+  <homeYdirOverride>-1</homeYdirOverride><!--- Define si la posición Y del origen definida anteriormente es el: "mínimo", el "centro" o el "max" -->
+  <homeZdirOverride>-1</homeZdirOverride><!--- Define si la posición Z del origen definida anteriormente es el: "mínimo", el "centro" o el "max" -->
+  <flipXoverride>1</flipXoverride><!--- Si activamos esta opción se invierte la dirección del eje X en la vista previa del programa -->
+  <flipYoverride>-1</flipYoverride><!--- Si activamos esta opción se invierte la dirección del eje Y en la vista previa del programa -->
+  <flipZoverride>1</flipZoverride><!--- Si activamos esta opción se invierte la dirección del eje Z en la vista previa del programa -->
+  <toolheadOffsets>0,0|0,0|0,0|0,0|0,0|0,0</toolheadOffsets><!--- En esta opción configuramos offset de cabezal de X y Y para el extrusor seleccionado -->
+  <overrideFirmwareConfiguration>1</overrideFirmwareConfiguration><!--- Permite modificar la configuración del firmware -->
+  <firmwareTypeOverride>RepRap (Marlin/Repetier/Sprinter)</firmwareTypeOverride><!--- Tipo de firmware, "RepRap", "Makerbot", "FlashForge Dreamer", "Bits from Bytes (BFB)" -->
+  <GPXconfigOverride>r2</GPXconfigOverride><!--- Perfil GPX, "Replicator 2 (default config)"-->
+  <baudRateOverride>115200</baudRateOverride><!--- Tasa de baudios, "9600", "19200", "38400", "57600", "115200", "230400", "250000" -->
+  <overridePrinterModels>1</overridePrinterModels>
+  <printerModelsOverride></printerModelsOverride>
+
+  <!--- SCRIPTS-->
+  <startingGcode>G28 ; home all axes,G1 X0 Y20 Z0.2 F3000 ; get ready to prime,G92 E0 ; reset extrusion distance,G1 X200 E20 F600 ; prime nozzle</startingGcode>
+  <layerChangeGcode></layerChangeGcode><!--- Permite establecer un Script en un cambio de capa -->
+  <retractionGcode></retractionGcode><!--- Permite definir un Script para operaciones de retracción -->
+  <toolChangeGcode></toolChangeGcode>
+  <endingGcode>G92 E0,G1 E-6.25 F1500 ; retraction,G92 E0,G1 Y210 ; move away from part,M104 S0 T0,M104 S0,M140 S0,M106 S0</endingGcode>
+  <exportFileFormat>gcode</exportFileFormat><!--- Aquí se define la extensión por defecto que queremos establcer a la exportación de archivos: ".Gcode", ".x3g", ".markerbot", ".3w", ".g3dem", ".bfb" -->
+  <celebration>0</celebration><!--- Solo con la extensión ".x3g" esta opción permite activar una melodia al terminar la impresión -->
+  <celebrationSong>Random Song</celebrationSong><!--- Aqui se selecciona que melodia se quiere definir -->
+  <postProcessing></postProcessing><!--- Scrips adicionales para el post proceso -->
+
+
+   <!--- SPEED-->
+  <defaultSpeed>3600</defaultSpeed><!--- Velocidad por defecto impresión (mm/min) -->
+  <outlineUnderspeed>0.5</outlineUnderspeed><!--- Multiplicador velocidad lineas exteriores -->
+  <solidInfillUnderspeed>0.8</solidInfillUnderspeed><!--- Multiplicador velocidad infill -->
+  <supportUnderspeed>0.8</supportUnderspeed><!--- Multiplicador velocidad soportes -->
+  <rapidXYspeed>4800</rapidXYspeed><!--- Velocidad ejeXY cuando no esta imprimiendo (mm/min) -->
+  <rapidZspeed>1002</rapidZspeed><!--- Velocidad ejeZ cuando no esta imprimiendo (mm/min) -->
+
+  <!--- BRIDGING FILAMENT PROPIERTIES AND TOOL RETRACTION-->
+   <!--- BRIDGING-->
+  <minBridgingArea>50</minBridgingArea><!--- Area a partir de la cual el programa realiza calculos de puenteo-->
+  <bridgingExtraInflation>0</bridgingExtraInflation><!--- Expande en mm la extrusion del puenteo para que tenga mayor superposición con la capa inferior -->
+  <bridgingExtrusionMultiplier>1</bridgingExtrusionMultiplier><!--- Porcentaje del multiplicador de extrusión para el puenteo -->
+  <bridgingSpeedMultiplier>1</bridgingSpeedMultiplier><!--- Porcentaje de velocidad para el puenteo -->
+  <useFixedBridgingAngle>0</useFixedBridgingAngle><!--- Scrips adicionales para el post proceso -->
+  <fixedBridgingAngle>0</fixedBridgingAngle><!--- Definir un ángulo fijo para todo el puenteo -->
+  <applyBridgingToPerimeters>0</applyBridgingToPerimeters><!--- Esta opción activada aplica estos mismos ajustes para los perímetros -->
+
+   <!--- FILAMENT PROPIERTIES-->
+  <filamentDiameters>1.75|1.75|1.75|1.75|1.75|1.75</filamentDiameters><!--- Diámetro del filamento -->
+  <filamentPricesPerKg>46|46|46|46|46|46</filamentPricesPerKg>
+  <filamentDensities>1.25|1.25|1.25|1.25|1.25|1.25</filamentDensities>
+  <filamentPricesPerKg>46|46|46|46|46|46</filamentPricesPerKg><!--- Precio del filamento -->
+  <filamentDensities>1.25|1.25|1.25|1.25|1.25|1.25</filamentDensities><!--- Densidad del filamento -->
+
+
+  <!--- ADVANCE-->
+  <useMinPrintHeight>0</useMinPrintHeight><!--- Comenzar a imprimir a una altura -->
+  <minPrintHeight>0</minPrintHeight><!--- Altura a partir de la cual se empieza a imprimir-->
+  <useMaxPrintHeight>0</useMaxPrintHeight><!--- Parar de imprimir a una altura -->
+  <maxPrintHeight>0</maxPrintHeight><!--- Altura a partir de la cual se para de imprimir-->
+  <useDiaphragm>0</useDiaphragm>
+  <diaphragmLayerInterval>20</diaphragmLayerInterval>
+  <robustSlicing>1</robustSlicing>
+  <mergeAllIntoSolid>0</mergeAllIntoSolid>
+  <onlyRetractWhenCrossingOutline>1</onlyRetractWhenCrossingOutline><!--- Retraer solamente cuando se cruce espacios abiertos-->
+  <retractBetweenLayers>1</retractBetweenLayers><!--- Forzar la retracción entre capas-->
+  <useRetractionMinTravel>0</useRetractionMinTravel><!--- Viaje mínimo para retracción-->
+  <retractionMinTravel>3</retractionMinTravel><!--- Definir esa distancia mínima-->
+  <retractWhileWiping>0</retractWhileWiping><!--- Realizar retracciones durante el movimiento de barrido-->
+  <onlyWipeOutlines>1</onlyWipeOutlines><!--- Barrer el extrusor solamente para los perímetros exteriores-->
+  <avoidCrossingOutline>0</avoidCrossingOutline><!--- Evitar cruzar el contorno para los movimientos de viaje-->
+  <maxMovementDetourFactor>3</maxMovementDetourFactor><!--- Definir el factor de desviación máximo permitido-->
+  <toolChangeRetractionDistance>12</toolChangeRetractionDistance><!--- Distancia de retracción de cambio de cabezal-->
+  <toolChangeExtraRestartDistance>-0.5</toolChangeExtraRestartDistance><!--- Distancia adicional de retracción de reinicio de cabezal-->
+  <toolChangeRetractionSpeed>600</toolChangeRetractionSpeed><!--- Velocidad de retracción de cambio de cabezal-->
+  <externalThinWallType>0</externalThinWallType><!--- Como imprimir pared externa delgada, "Perimeters only", "Allow single extrusion walls" -->
+  <internalThinWallType>2</internalThinWallType><!--- Como imprimir pared interna delgada, "Perimeters only", "Allow single extrusion walls", "Allow gap fill" -->
+  <thinWallAllowedOverlapPercentage>10</thinWallAllowedOverlapPercentage><!--- Porcentaje de superposición de perímetros permitida -->
+  <singleExtrusionMinLength>1</singleExtrusionMinLength><!--- Longitud mínima de extrusión-->
+  <singleExtrusionMinPrintingWidthPercentage>50</singleExtrusionMinPrintingWidthPercentage><!--- Ancho mínimo de impresión-->
+  <singleExtrusionMaxPrintingWidthPercentage>200</singleExtrusionMaxPrintingWidthPercentage><!--- Ancho máximo de impresión-->
+  <singleExtrusionEndpointExtension>0.2</singleExtrusionEndpointExtension><!--- Distancia de extensión de cada segmento-->
+  <horizontalSizeCompensation>0</horizontalSizeCompensation><!--- Compensación de tamaño horizontal-->
+</profile>
